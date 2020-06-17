@@ -44,7 +44,8 @@ export class AppComponent {
 
         force.init({
             appId: "3MVG9sG9Z3Q1Rlbc4tkIx2fI3ZUDVyYt86Ypl8ZqBXTpzPbQNHxq7gpwKcN75BB.fpgHxzSWgwgRY6nVfvBUe",
-            proxyURL: "https://f44888.herokuapp.com/"
+            proxyURL: "https://f44888.herokuapp.com/",
+            oauthCallbackURL =  "https://f44888.herokuapp.com/oauthcallback.html"
         });
         force.login().then(() => {
             force.query("select id, firstname, lastname, phone from contact").then(result => this.contacts = (<any>result).records);
