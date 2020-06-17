@@ -43,7 +43,7 @@ export class AppComponent {
     constructor() {
 
         force.init({
-            appId: "3MVG9sG9Z3Q1Rlbc4tkIx2fI3ZUDVyYt86Ypl8ZqBXTpzPbQNHxq7gpwKcN75BB.fpgHxzSWgwgRY6nVfvBUe",
+            appId: "3MVG9Kip4IKAZQEWesMZisCOWg3rgCo34WbiJDAgXeZpves.BpN_dsw7m0uckv9MdPnpaIwcsJ5eWuskETvNU",
             proxyURL: "https://f44888.herokuapp.com/",
             oauthCallbackURL =  "https://f44888.herokuapp.com/oauthcallback.html"
         });
