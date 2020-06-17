@@ -30,7 +30,8 @@ let // The login URL for the OAuth process
 		context = window.location.pathname.substring(0, window.location.pathname.lastIndexOf("/")),
 
 // if page URL is http://localhost:3000/myapp/index.html, serverURL is http://localhost:3000
-		serverURL = window.location.protocol + '//' + window.location.hostname ,
+		serverURL = window.location.protocol + '//' + window.location.hostname + (window.location.port ? ':' + 
+											  window.location.port : ''),
 
 // if page URL is http://localhost:3000/myapp/index.html, baseURL is http://localhost:3000/myapp
 		baseURL = serverURL + context,
